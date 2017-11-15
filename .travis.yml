@@ -1,0 +1,7 @@
+language: ruby
+rvm:
+ - 4.2
+
+script:
+ - rake db:migrate
+ - rake
