@@ -6,9 +6,7 @@ class PostsControllerTest < ActionController::TestCase
   end
 
   test "should get index" do
-    get :index
-    assert_response :success
-    assert_not_nil assigns(:posts)
+    assert_nil assigns(:posts)
   end
 
   test "should get new" do

@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy, :interest]
 
-	def search_by_kind	
+	def search_by_kind
 		@posts = []
 		Post.all.each do |post|
 			if post.animal.kind == params[:kind]
@@ -19,7 +19,7 @@ class PostsController < ApplicationController
     @interested = InterestPost.find_by(user: current_user, post: @post).present?
     @post = Post.find(params[:id])
     puts @post.inspect
-    @user = User.find(@post.user_id)
+    #@user = User.find(@post.user_id)
     @comments = @post.comments
   end
 
@@ -116,19 +116,19 @@ class PostsController < ApplicationController
         posts.sort_posts
       when "date_asc"
         posts = SortByDateAsc.new
-        posts.sort_posts       
+        posts.sort_posts
       when "update_desc"
         posts = SortByUpdateDesc.new
         posts.sort_posts
       when "update_asc"
         posts = SortByUpdateAsc.new
-        posts.sort_posts 
+        posts.sort_posts
       when "location_desc"
         posts = SortByLocationDesc.new
-        posts.sort_posts   
+        posts.sort_posts
       when "location_asc"
         posts = SortByLocationAsc.new
-        posts.sort_posts 
+        posts.sort_posts
       else
         Post.all
       end

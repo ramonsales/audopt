@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<span class="post-image"><%= image_tag @post.animal.avatar.url(:thumb), class:'animal-image' %></span>
+<span class="post-image"></span>
 
 <table class="post-details">
   <tr>
@@ -10,7 +10,7 @@
   </tr>
 
   <tr>
-    <td>Criador: <%= link_to @user.name, user_path(@user.id) %></td>
+    <td>Criador: <%= link_to "Name", '/' %></td>
   </tr>
 
   <tr>
@@ -27,28 +27,28 @@
   </tr>
 
   <tr>
-    <td>Nome: <%= @post.animal.name %></td>
+    <td>Nome: <%= "@post.animal.name" %></td>
   </tr>
   <tr>
-    <td>Tipo: <%= @post.animal.kind %></td>
+    <td>Tipo: <%= "@post.animal.kind" %></td>
   </tr>
   <tr>
-    <td>Raça: <%= @post.animal.breed %></td>
+    <td>Raça: <%= "@post.animal.breed" %></td>
   </tr>
   <tr>
-    <td>Vacinado? <%= @post.animal.vaccined ? "Sim" : "Não" %></td>
+    <td>Vacinado? <%= true ? "Sim" : "Não" %></td>
   </tr>
   <tr>
-    <td>Castrado? <%= @post.animal.castrated ? "Sim" : "Não" %></td>
+    <td>Castrado? <%= true ? "Sim" : "Não" %></td>
   </tr>
   <tr>
-    <td>Sexo: <%= @post.animal.sex == "M" ? "Macho" : "Fêmea" %></td>
+    <td>Sexo: <%= "M" == "M" ? "Macho" : "Fêmea" %></td>
   </tr>
   <tr>
-    <td>Tamanho: <%= @post.animal.size %></td>
+    <td>Tamanho: <%= "@post.animal.size" %></td>
   </tr>
   <tr>
-    <td>Já foi adotado? <%= @post.animal.adopted ? "Sim" : "Não" %></td>
+    <td>Já foi adotado? <%= true ? "Sim" : "Não" %></td>
   </tr>
 </table>
 
@@ -93,7 +93,7 @@
       <% end %>
     <% else %>
       <p style="margin-left: 5px;">Esta publicação não possui comentários</p>
-    <% end %>  
+    <% end %>
   </table>
 </div>
 

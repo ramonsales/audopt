@@ -3,7 +3,3 @@
 one:
   singleton_guard: 1
   qtd: 1
-
-two:
-  singleton_guard: 1
-  qtd: 1
