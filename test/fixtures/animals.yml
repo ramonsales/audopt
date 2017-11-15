@@ -2,18 +2,16 @@
 
 one:
   name: MyString
-  type: 
   breed: MyString
   vaccined: false
   castrated: false
-  sex: 
+  sex:
   size: MyString
 
 two:
   name: MyString
-  type: 
   breed: MyString
   vaccined: false
   castrated: false
-  sex: 
+  sex:
   size: MyString
