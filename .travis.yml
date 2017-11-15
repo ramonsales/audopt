@@ -10,4 +10,4 @@ before_script:
  - rake db:migrate
 
 script:
- - rails server
+# - rake test # Tests are not working yet
