@@ -1,7 +1,13 @@
 language: ruby
 rvm:
- - "4.2.6"
+ - 2.2.2
+
+before_install:
+ - sudo apt-get install npm
+ - sudo apt-get install sqlite3 libsqlite3-dev
+
+before_script:
+ - rake db:migrate
 
 script:
- - rake db:migrate
  - rake
