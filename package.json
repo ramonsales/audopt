@@ -1,0 +1,34 @@
+{
+  "name": "audopt",
+  "version": "1.0.0",
+  "description": "Projeto realizado na disciplina de Desenho de Software com o intuito de localizar e divulgar a localização de animais de rua para que estes sejam adotados",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "rake test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thiagotrfm/audopt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thiagotrfm/audopt/issues"
+  },
+  "homepage": "https://github.com/Thiagotrfm/audopt#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-scss-lint": "^0.5.0",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5"
+  },
+  "dependencies": {}
+}

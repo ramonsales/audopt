@@ -1,7 +1,9 @@
+$white-color: #fff;
+
 .notification-content > a {
-    color: white;
+  color: $white-color;
 }
 
 #lala > #dropdown1 {
-    width: 300px;
+  width: 300px;
 }
